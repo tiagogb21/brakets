@@ -19,14 +19,14 @@ def compare_brackets(open, close):
 
 def isBalanced(brackets):
   # Verificamos se o tamanho é ímpar, se sim, retornamos 'NO'
-    if(len(str) % 2 != 0):
+    if(len(brackets) % 2 != 0):
         return 'NO'
     # Criamos uma pilha (stack):
     stack = []
     # Armazenamos os brackets de abertura em um dicionário:
     brackets_open_store = ['{', '(', '[']
-    # Iteramos por cada elemento do parâmetro str:
-    for char in str:
+    # Iteramos por cada elemento do parâmetro brackets:
+    for char in brackets:
         # Verificamos se o elemento é de abertura
         if char in brackets_open_store:
             # Empurramos para o final da pilha
